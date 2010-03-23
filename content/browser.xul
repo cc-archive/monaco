@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Robert Gust-Bardon and Creative Commons
+
+This file is part of Creative Commons Content Attributor.
+
+Creative Commons Content Attributor is free software: you can redistribute
+it and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the License,
+or (at your option) any later version.
+
+Creative Commons Content Attributor is distributed in the hope that it will
+be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with Creative Commons Content Attributor.  If not, see
+<http://www.gnu.org/licenses/>.
+-->
+<?xml-stylesheet href="chrome://monaco/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://monaco/locale/monaco.dtd">
+<overlay id="monaco-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="monaco-strings"
+                  src="chrome://monaco/locale/monaco.properties"/>
+  </stringbundleset>
+  <statusbar id="status-bar">
+    <statusbarpanel id="monaco-status" insertafter="livemark-button">
+      <!--
+      <label id="monaco-status-label" collapsed="false" crop="end"
+             value="&monaco.labelInactive;" />
+      -->
+      <image id="monaco-status-image" width="16" height="16"
+             src="chrome://monaco/content/inactive.png" mousethrough="never"
+             onclick="if (!event.button) { monaco.display(); }"
+             tooltiptext="&monaco.labelInactive;"/>
+    </statusbarpanel>
+  </statusbar>
+</overlay>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Robert Gust-Bardon and Creative Commons
+
+This file is part of Creative Commons Content Attributor.
+
+Creative Commons Content Attributor is free software: you can redistribute
+it and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the License,
+or (at your option) any later version.
+
+Creative Commons Content Attributor is distributed in the hope that it will
+be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with Creative Commons Content Attributor.  If not, see
+<http://www.gnu.org/licenses/>.
+-->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>monaco@creativecommons.org</em:id>
+    <em:name>Creative Commons Content Attributor</em:name>
+    <em:version>0.1</em:version>
+    <em:creator>Robert Gust&#8208;Bardon and Creative Commons</em:creator>
+    <em:description>Facilitates the attribution of content available under a Creative Commons license</em:description>
+    <em:homepageURL>http://wiki.creativecommons.org/Content_Attributor</em:homepageURL>
+    <em:iconURL>chrome://monaco/content/monaco.png</em:iconURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0.0</em:minVersion>
+        <em:maxVersion>3.9.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
